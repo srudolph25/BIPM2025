@@ -73,11 +73,39 @@
       <p><a href="https://www.linkedin.com/in/sabina-rudolph" target="_blank">LinkedIn Profile</a></p>
     </div>
 
-    <div class="section">
-      <h3>Born and Raised</h3>
-      <p>📌 Berlin</p>
-      I grew up in Berlin, yet my home was always filled with the stories, language, and spirit of Bosnia. As the child of war refugees, I carry both worlds within me.
-    </div>
+  <div class="section born-box">
+  <h3>Born and Raised</h3>
+  <p>📌 Berlin</p>
+  <p>I grew up in Berlin, yet my home was always filled with the stories, language, and spirit of Bosnia. As the child of war refugees, I carry both worlds within me.</p>
+</div>
+
+    .born-box {
+  position: relative;
+  background-image: url('bosnia-background.jpg'); /* ← dein Bild hier */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 12px;
+  padding: 30px;
+  margin-bottom: 30px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  color: #000;
+  overflow: hidden;
+}
+
+.born-box::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(255, 255, 255, 0.85); /* Weiß mit Transparenz */
+  border-radius: 12px;
+  z-index: 0;
+}
+
+.born-box > * {
+  position: relative;
+  z-index: 1;
+}
 
     <div class="section">
       <h3>What I Like</h3>
