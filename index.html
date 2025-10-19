@@ -81,24 +81,32 @@
 
     .born-box {
   position: relative;
-  background-image: url('IMG_3956.JPG')
+  background-image: url('bosnia-background1.jpg'); /* dein Bild */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  border-radius: 12px;
-  padding: 30px;
-  margin-bottom: 30px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-  color: #000;
+  border-radius: 16px;
+  padding: 40px;
+  margin-bottom: 40px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  color: #222;
   overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.born-box:hover {
+  transform: scale(1.01);
 }
 
 .born-box::before {
   content: "";
   position: absolute;
   inset: 0;
-  background-color: rgba(255, 255, 255, 0.85); /* Weiß mit Transparenz */
-  border-radius: 12px;
+  background: linear-gradient(
+    rgba(255, 255, 255, 0.9),
+    rgba(255, 255, 255, 0.85)
+  );
+  border-radius: 16px;
   z-index: 0;
 }
 
