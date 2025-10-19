@@ -6,134 +6,170 @@
   <style>
     body {
       font-family: Arial, sans-serif;
-      margin: 40px;
-      line-height: 1.6;
+      margin: 0;
+      padding: 40px;
+      background-color: #f5f5f5; /* hellgrauer Hintergrund */
+      display: flex;
+      justify-content: center;
     }
+
+    .container {
+      max-width: 900px;
+      width: 100%;
+    }
+
+    .section {
+      background-color: #ffffff; /* weiße Box */
+      border-radius: 12px;
+      padding: 30px;
+      margin-bottom: 30px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
+
     img {
       max-width: 100%;
       height: auto;
       margin: 10px 0;
+      border-radius: 6px;
     }
+
     table {
       width: 100%;
       border-collapse: collapse;
       margin-top: 20px;
     }
+
     th, td {
       border: 1px solid #ccc;
       padding: 8px;
       text-align: left;
     }
+
     th {
       background-color: #f2f2f2;
+    }
+
+    hr {
+      border: none;
+      border-top: 1px solid #ccc;
+      margin: 20px 0;
+    }
+
+    h1, h2, h3 {
+      margin-top: 0;
     }
   </style>
 </head>
 <body>
+  <div class="container">
 
-  <h1>Sabina's Story</h1>
-  <hr style="border: none; border-top: 1px solid #ccc; margin: 20px 0;">
-  <h2>Current Position</h2>
-  <img src="1706018805660.jpeg" alt="Photo of Sabina Rudolph" style="width:150px; height:auto; border-radius:3px;">
-  <p><strong>Sabina Rudolph</strong><br>
-     Professional at Deloitte</p>
-  <p><a href="https://www.linkedin.com/in/sabina-rudolph" target="_blank">LinkedIn Profile</a></p>
-  <hr style="border: none; border-top: 1px solid #ccc; margin: 20px 0;">
-  <h3>Born and Raised</h3>
-  <p>📌 Berlin</p>
-  <hr style="border: none; border-top: 1px solid #ccc; margin: 20px 0;">
-  <h3>What I Like</h3>
-<ul>
-  <li>🍰 Baking</li>
-  <img src="Baking.jpg" style="width:750px; height:auto; border-radius:3px;">
-  <li>🏋️‍♀️ Being active </li>
-  <img src="Active.png" style="width:750px; height:auto; border-radius:3px;">
-</ul>
-<hr style="border: none; border-top: 1px solid #ccc; margin: 20px 0;">
-  <h3>Academic Journey</h3>
-  <p>🎓 Stops Along the Way</p>
+    <div class="section">
+      <h1>Sabina's Story</h1>
+      <hr>
+      <h2>Current Position</h2>
+      <img src="1706018805660.jpeg" alt="Photo of Sabina Rudolph" style="width:150px;">
+      <p><strong>Sabina Rudolph</strong><br>
+         Professional at Deloitte</p>
+      <p><a href="https://www.linkedin.com/in/sabina-rudolph" target="_blank">LinkedIn Profile</a></p>
+    </div>
 
-<table style="width:800px;">
-  <tr>
-    <th>Period</th>
-    <th>Location</th>
-    <th>Role</th>
-  </tr>
-  <tr>
-    <td>2019–2024</td>
-    <td>Berlin, Germany</td>
-    <td>Bachelor in Berlin</td>
-  </tr>
-  <tr>
-    <td>2025–Now</td>
-    <td>Berlin, Germany</td>
-    <td>Master in Berlin</td>
-  </tr>
-</table>
-<hr style="border: none; border-top: 1px solid #ccc; margin: 20px 0;">
-<h3>Professional Journey</h3>
-<p>💼 Career Steps</p>
+    <div class="section">
+      <h3>Born and Raised</h3>
+      <p>📌 Berlin</p>
+    </div>
 
-<table style="width:800px;">
-  <tr>
-    <th>Period</th>
-    <th>Company</th>
-    <th>Role</th>
-    <th>Type</th>
-   
-  </tr>
-  <tr>
-    <td>Aug 2024 – Present </td>
-    <td>Deloitte</td>
-    <td>Professional | Business Process Solutions</td>
-    <td>Full-time</td>
-    
-  </tr>
-  <tr>
-    <td>Nov 2023 – Aug 2024 </td>
-    <td>Deloitte</td>
-    <td>Junior Staff | Business Process Solutions</td>
-    <td>Working Student</td>
-    
-  </tr>
-  <tr>
-    <td>May 2023 – Oct 2023 </td>
-    <td>Deloitte</td>
-    <td>Junior Staff | Business Process Solutions</td>
-    <td>Internship</td>
-    
-  </tr>
-  <tr>
-    <td>Feb 2023 – May 2023 </td>
-    <td>Turner & Townsend</td>
-    <td>Financial Assistant</td>
-    <td>Internship</td>
-    
-  </tr>
-  <tr>
-    <td>Nov 2022 – Feb 2023 </td>
-    <td>Turner & Townsend</td>
-    <td>Recruiting Assistant</td>
-    <td>Internship</td>
-    
-  </tr>
-  <tr>
-    <td>Oct 2021 – Nov 2022 </td>
-    <td>Turner & Townsend</td>
-    <td>Marketing & Business Generation Assistant</td>
-    <td>Working Student</td>
-    
-  </tr>
-  <tr>
-    <td>Nov 2020 – Sep 2021 </td>
-    <td>Turner & Townsend</td>
-    <td>Team Assistant</td>
-    <td>Working Student</td>
-    
-  </tr>
-</table>
-<hr style="border: none; border-top: 1px solid #ccc; margin: 20px 0;">
+    <div class="section">
+      <h3>What I Like</h3>
+      <ul>
+        <li>🍰 Baking</li>
+        <img src="Baking.jpg" style="width:750px;">
+        <li>🏋️‍♀️ Being active</li>
+        <img src="Active.png" style="width:750px;">
+      </ul>
+    </div>
+
+    <div class="section">
+      <h3>Academic Journey</h3>
+      <p>🎓 Stops Along the Way</p>
+      <table>
+        <tr>
+          <th>Period</th>
+          <th>Location</th>
+          <th>Role</th>
+        </tr>
+        <tr>
+          <td>2019–2024</td>
+          <td>Berlin, Germany</td>
+          <td>Bachelor in Berlin</td>
+        </tr>
+        <tr>
+          <td>2025–Now</td>
+          <td>Berlin, Germany</td>
+          <td>Master in Berlin</td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="section">
+      <h3>Professional Journey</h3>
+      <p>💼 Career Steps</p>
+      <table>
+        <tr>
+          <th>Period</th>
+          <th>Company</th>
+          <th>Role</th>
+          <th>Type</th>
+        </tr>
+        <tr>
+          <td>Aug 2024 – Present</td>
+          <td>Deloitte</td>
+          <td>Professional | Business Process Solutions</td>
+          <td>Full-time</td>
+        </tr>
+        <tr>
+          <td>Nov 2023 – Aug 2024</td>
+          <td>Deloitte</td>
+          <td>Junior Staff | Business Process Solutions</td>
+          <td>Working Student</td>
+        </tr>
+        <tr>
+          <td>May 2023 – Oct 2023</td>
+          <td>Deloitte</td>
+          <td>Junior Staff | Business Process Solutions</td>
+          <td>Internship</td>
+        </tr>
+        <tr>
+          <td>Feb 2023 – May 2023</td>
+          <td>Turner & Townsend</td>
+          <td>Financial Assistant</td>
+          <td>Internship</td>
+        </tr>
+        <tr>
+          <td>Nov 2022 – Feb 2023</td>
+          <td>Turner & Townsend</td>
+          <td>Recruiting Assistant</td>
+          <td>Internship</td>
+        </tr>
+        <tr>
+          <td>Oct 2021 – Nov 2022</td>
+          <td>Turner & Townsend</td>
+          <td>Marketing & Business Generation Assistant</td>
+          <td>Working Student</td>
+        </tr>
+        <tr>
+          <td>Nov 2020 – Sep 2021</td>
+          <td>Turner & Townsend</td>
+          <td>Team Assistant</td>
+          <td>Working Student</td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="section">
+      <h3>Academic Map</h3>
+      <iframe src="Kopie von academic_journey_map.html" width="800" height="600" style="border:none; margin-top:20px;"></iframe>
+    </div>
+
+  </div>
 </body>
 </html>
-
-<iframe src="Kopie von academic_journey_map.html" width="800" height="600" style="border:none; margin-top:40px;"></iframe>
